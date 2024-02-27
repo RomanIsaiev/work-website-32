@@ -82,7 +82,22 @@ p {
 .nav {
 }
 
+.header-fixed-background {
+  position: fixed;
+
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+
+  z-index: 999;
+}
+
 .logo-menu-container {
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,8 +105,6 @@ p {
 
   padding-top: 30px;
   padding-bottom: 30px;
-
-  margin-bottom: 50px;
 }
 
 .header-logo {
@@ -199,10 +212,17 @@ p {
 
 /* hero */
 
+.hero {
+  padding-top: 140px;
+}
+
 .hero-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  width: 100%;
+  height: auto;
 
   margin-bottom: 20px;
 }
@@ -449,6 +469,12 @@ p {
   letter-spacing: 0.15px;
 }
 
+.skills-list .list-item .skills-images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .skills-list .list-item:nth-child(1) .item-text-content {
   margin-top: -15px;
 }
@@ -463,6 +489,12 @@ p {
 
 .skills-list .list-item:nth-child(4) .item-text-content {
   margin-top: -35px;
+}
+
+.water-wave {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* about-author */
