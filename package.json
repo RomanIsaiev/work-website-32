@@ -12,6 +12,7 @@
     "vite": "^5.1.4"
   },
   "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
     "jquery": "^3.7.1",
     "siema": "^1.5.1",
     "vanilla-hamburger": "^0.2.3"
