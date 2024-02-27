@@ -125,6 +125,14 @@ p {
   z-index: 999;
 }
 
+.spin-burger {
+  color: #101010;
+}
+
+.spin-burger[pressed] {
+  color: #101010;
+}
+
 .navigation-container {
   display: none;
 }
@@ -138,8 +146,11 @@ p {
 }
 
 .nav-list .list-item {
-  color: #101010;
   text-align: right;
+}
+
+.nav-list .list-item a {
+  color: #101010;
   font-family: "Futura PT";
   font-size: 20px;
   font-style: normal;
