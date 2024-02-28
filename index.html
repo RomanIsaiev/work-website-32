@@ -44,48 +44,17 @@
         </div>
       </div>
     </header>
-    <!-- <header class="header">
-      <div class="header-fixed-background">
-        <div class="logo-menu-container">
-          <a class="header-logo link" href="./index.html"
-            ><svg class="header-logo" width="36" height="30">
-              <use href="./src/images/sprite.svg#logo"></use></svg
-          ></a>
-          <button
-            class="menu-btn js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu-container"
-          >
-            <spin-burger size="28"></spin-burger>
-          </button>
-        </div>
-        <nav class="nav">
-          <div class="navigation-container">
-            <ul class="nav-list list">
-              <li class="list-item">
-                <a href="" class="link">Школа онлайн</a>
-              </li>
-              <li class="list-item">
-                <a href="" class="link">Про освіту</a>
-              </li>
-              <li class="list-item">
-                <a href="" class="link">Програма навчання</a>
-              </li>
-            </ul>
-            <div class="nav-contacts-container">
-              <a class="nav-phone link" href="">+38 097 225 2099</a>
-              <button class="header-button" type="button">Подати заявку</button>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header> -->
     <main>
       <section class="hero">
         <div class="container">
           <picture
             ><source
+              srcset="
+                ./src/images/header-main-text-desktop-1x.png 1x,
+                ./src/images/header-main-text-desktop-2x.png 2x
+              "
+              media="(min-width: 1440px)" />
+            <source
               srcset="
                 ./src/images/header-main-text-mobile-1x.png 1x,
                 ./src/images/header-main-text-mobile-2x.png 2x
@@ -144,8 +113,11 @@
               </p>
             </li>
           </ul>
-          <svg class="about-school-image" width="262" height="171">
+          <svg class="about-school-image-mobile" width="262" height="171">
             <use href="./src/images/sprite.svg#about-school"></use>
+          </svg>
+          <svg class="about-school-image-desktop" width="546" height="349">
+            <use href="./src/images/sprite.svg#about-school-desktop"></use>
           </svg>
         </div>
       </section>
@@ -791,7 +763,9 @@
           </ul>
           <div class="mobile-menu-contacts">
             <a class="mobile-menu-phone link" href="">+38 097 225 2099</a>
-            <button class="header-button" type="button">Подати заявку</button>
+            <button class="mobile-header-button" type="button">
+              Подати заявку
+            </button>
           </div>
         </div>
       </div>

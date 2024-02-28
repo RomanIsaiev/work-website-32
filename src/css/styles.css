@@ -73,6 +73,15 @@ p {
   max-width: 360px;
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 165px;
+    padding-right: 165px;
+
+    max-width: 1440px;
+  }
+}
+
 /* header */
 
 .header {
@@ -134,39 +143,14 @@ p {
   display: none;
 }
 
-.nav-list .list-item {
-  text-align: right;
-}
-
 .nav-list .list-item a {
   color: #101010;
   font-family: "Futura PT";
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 28px */
-  letter-spacing: 0.2px;
-}
-
-.nav-list .list-item:nth-child(1):before {
-  content: "●";
-  margin-right: 10px;
-
-  color: #fed165;
-}
-
-.nav-list .list-item:nth-child(2):before {
-  content: "●";
-  margin-right: 10px;
-
-  color: #00a2de;
-}
-
-.nav-list .list-item:nth-child(3):before {
-  content: "●";
-  margin-right: 10px;
-
-  color: #38b077;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
 }
 
 .nav-contacts-container {
@@ -176,13 +160,15 @@ p {
 .nav-phone {
   color: #101010;
   font-family: "Futura PT";
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
-  letter-spacing: 0.16px;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
 
-  margin-bottom: 10px;
+  width: 146px;
+
+  margin-right: 20px;
 }
 
 .header-button {
@@ -192,16 +178,17 @@ p {
 
   color: #fff;
   font-family: "Futura PT";
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 450;
-  line-height: 140%; /* 21px */
-  letter-spacing: 0.15px;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
 
-  max-width: 133px;
+  max-width: 160px;
   width: 100%;
+  height: 45px;
 
-  padding: 6px 20px;
+  padding: 10px 20px;
 
   border: none;
 
@@ -212,6 +199,24 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1440px;
+  }
+
   .menu-btn {
     display: none;
   }
@@ -219,6 +224,20 @@ p {
   .header-logo {
     width: 65px;
     height: 56px;
+
+    margin-right: 200px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .nav-contacts-container {
+    display: flex;
+    align-items: center;
   }
 }
 /* hero */
@@ -249,6 +268,8 @@ p {
   width: 100%;
   height: auto;
 
+  min-height: 236px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -273,6 +294,53 @@ p {
   max-width: 165px;
 }
 
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 190px;
+  }
+
+  .hero-title {
+    margin-bottom: -20px;
+  }
+
+  .hero-background-container {
+    padding-top: 193px;
+    padding-bottom: 193px;
+    background-image: url(../images/hero-background-desktop-1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+
+    min-height: 545px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-background-container {
+      background-image: url(../images/hero-background-desktop-2x.jpg);
+    }
+  }
+
+  .hero-text {
+    color: #fff;
+    font-family: "Futura PT";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 40.5px */
+    letter-spacing: 0.45px;
+
+    max-width: 393px;
+  }
+}
+
 /* more-info */
 
 .more-info {
@@ -288,8 +356,8 @@ p {
 
 .logo-text {
   position: absolute;
-  top: 27px;
-  left: 115px;
+  top: -3px;
+  left: 126px;
 
   color: #c3c3c3;
   font-family: "Futura PT";
@@ -299,6 +367,15 @@ p {
   line-height: 100%; /* 13px */
   letter-spacing: 0.13px;
   text-transform: lowercase;
+}
+
+.logo-with-text-image {
+  display: block;
+
+  width: 299px;
+  height: 87px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .more-info-desc {
@@ -342,6 +419,43 @@ p {
   background: #d7efe4;
 }
 
+@media screen and (min-width: 1440px) {
+  .more-info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .logo-text {
+    position: absolute;
+    top: 0;
+    left: 478px;
+
+    font-size: 24px;
+  }
+
+  .logo-with-text-image {
+    width: 734px;
+    height: 192px;
+  }
+
+  .more-info-desc {
+    font-size: 46px;
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 50px;
+  }
+
+  .more-info-button {
+    font-size: 32px;
+
+    padding: 30px 220px;
+    max-width: 732px;
+  }
+}
+
 /* about-school */
 
 .about-school {
@@ -355,7 +469,7 @@ p {
   position: relative;
 }
 
-.about-school-image {
+.about-school-image-mobile {
   position: absolute;
   left: 0;
   bottom: 87px;
@@ -397,6 +511,66 @@ p {
   font-weight: 450;
   line-height: 100%; /* 16px */
   letter-spacing: 0.16px;
+}
+
+.about-school-image-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-school {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .about-school-image-mobile {
+    display: none;
+  }
+
+  .about-school-image-desktop {
+    display: block;
+
+    position: absolute;
+    left: 302px;
+    bottom: 29px;
+  }
+
+  .about-school-list {
+    display: flex;
+    flex-direction: column;
+    gap: 221px;
+
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-school-list .list-item:nth-child(1) .item-text {
+    max-width: 678px;
+  }
+
+  .about-school-list .list-item:nth-child(1) .item-title {
+    max-width: 736px;
+  }
+
+  .about-school-list .list-item:nth-child(1) {
+    max-width: 831px;
+  }
+
+  .about-school-list .list-item:nth-child(2) {
+    max-width: 605px;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+
+  .about-school-list .item-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about-school-list .item-text {
+    font-size: 28px;
+  }
 }
 
 /* you-get-skills */
@@ -507,6 +681,43 @@ p {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .you-get-skills {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .you-get-skills .container {
+    margin-bottom: 100px;
+  }
+
+  .get-skills-title {
+    font-size: 60px;
+
+    max-width: 831px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+  }
+
+  .get-skills-desc {
+    color: #101010;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: 0.18px;
+
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 30px;
+  }
 }
 
 /* about-author */
@@ -1578,4 +1789,22 @@ p {
   letter-spacing: 0.16px;
 
   margin-bottom: 10px;
+}
+
+.mobile-header-button {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 140%; /* 21px */
+  letter-spacing: 0.15px;
+
+  padding: 7px 20px;
+  max-width: 133px;
+  width: 100%;
+
+  border: none;
+  border-radius: 90px;
+  background: #38b077;
 }
