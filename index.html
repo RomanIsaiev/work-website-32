@@ -14,7 +14,7 @@
     <header class="header">
       <div class="container">
         <nav class="navigation link">
-          <a class="header-logo link" href="./index.html"
+          <a class="header-logo link" href="#start"
             ><svg class="header-logo" width="36" height="30">
               <use href="./src/images/sprite.svg#logo"></use></svg
           ></a>
@@ -28,24 +28,26 @@
           </button>
           <ul class="nav-list list">
             <li class="list-item">
-              <a href="" class="link">Школа онлайн</a>
+              <a href="#school-online" class="link">Школа онлайн</a>
             </li>
             <li class="list-item">
-              <a href="" class="link">Про освіту</a>
+              <a href="#about-education" class="link">Про освіту</a>
             </li>
             <li class="list-item">
-              <a href="" class="link">Програма навчання</a>
+              <a href="#school-program" class="link">Програма навчання</a>
             </li>
           </ul>
         </nav>
         <div class="nav-contacts-container">
-          <a class="nav-phone link" href="">+38 097 225 2099</a>
+          <a class="nav-phone link" href="tel:+38 097 225 2099"
+            >+38 097 225 2099</a
+          >
           <button class="header-button" type="button">Подати заявку</button>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="start">
         <div class="container">
           <picture
             ><source
@@ -88,7 +90,7 @@
           </button>
         </div>
       </section>
-      <section class="about-school">
+      <section class="about-school" id="school-online">
         <div class="container">
           <ul class="about-school-list list">
             <li class="list-item">
@@ -369,7 +371,7 @@
           </ul>
         </div>
       </section>
-      <section class="thought-space">
+      <section class="thought-space" id="about-education">
         <div class="container">
           <div class="thought-title-container">
             <h2 class="throught-title">Простір МІРКУВАНЬ:</h2>
@@ -401,7 +403,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-tariffs">
+      <section class="section-tariffs" id="school-program">
         <div class="container">
           <div class="tariffs-title-container">
             <h2 class="tarif-title">Можливі програми навчання</h2>
@@ -847,9 +849,12 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <svg class="footer-text-logo" width="155" height="41">
-            <use href="./src/images/sprite.svg#logo-with-text-white"></use>
-          </svg>
+          <a href="#start" class="link">
+            <svg class="footer-text-logo" width="155" height="41">
+              <use
+                href="./src/images/sprite.svg#logo-with-text-white"
+              ></use></svg
+          ></a>
         </div>
         <div class="social-media-container">
           <ul class="social-media-list list">
@@ -872,7 +877,11 @@
           </ul>
         </div>
         <div class="footer-adress-container">
-          <a class="footer-nubmer link" href="" target="_blank" rel="nofollow"
+          <a
+            class="footer-nubmer link"
+            href="tel:+38 097 225 2099"
+            target="_blank"
+            rel="nofollow"
             >+38 097 225 2099</a
           >
         </div>
@@ -886,15 +895,19 @@
         <div>
           <ul class="mobile-menu-list list">
             <li class="list-item">
-              <a href="" class="link">Школа онлайн</a>
+              <a href="#school-online" class="link">Школа онлайн</a>
             </li>
-            <li class="list-item"><a href="" class="link">Про освіту</a></li>
             <li class="list-item">
-              <a href="" class="link">Програма навчання</a>
+              <a href="#about-education" class="link">Про освіту</a>
+            </li>
+            <li class="list-item">
+              <a href="#school-program" class="link">Програма навчання</a>
             </li>
           </ul>
           <div class="mobile-menu-contacts">
-            <a class="mobile-menu-phone link" href="">+38 097 225 2099</a>
+            <a class="mobile-menu-phone link" href="tel:+38 097 225 2099"
+              >+38 097 225 2099</a
+            >
             <button class="mobile-header-button" type="button">
               Подати заявку
             </button>
@@ -907,5 +920,6 @@
     <script type="module" src="./src/js/mobile-menu.js"></script>
     <script type="module" src="./src/js/siema.js"></script>
     <script type="module" src="./src/js/faq.js"></script>
+    <script type="module" src="./src/js/scroll.js"></script>
   </body>
 </html>
