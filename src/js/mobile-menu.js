@@ -7,6 +7,7 @@ import {
 (() => {
   const mobileMenu = document.querySelector(".js-menu-container");
   const openMenuBtn = document.querySelector(".js-open-menu");
+  const burger = document.querySelector("spin-burger");
   // const closeMenuBtn = document.querySelector(".js-close-menu");
 
   const linksMenuButtons = document.querySelectorAll(".mobile-menu-links");
@@ -19,8 +20,10 @@ import {
 
     if (!isMenuOpen) {
       disableBodyScroll(document.body);
+      // burger.pressed = true;
     } else {
       enableBodyScroll(document.body);
+      burger.pressed = false;
     }
   };
 
