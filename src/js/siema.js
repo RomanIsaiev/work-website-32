@@ -4,7 +4,7 @@ const mySiema = new Siema({
   selector: ".siema",
   duration: 200,
   easing: "ease-out",
-  perPage: 1,
+  perPage: { 320: 1, 1280: 2 },
   startIndex: 0,
   draggable: true,
   multipleDrag: true,
