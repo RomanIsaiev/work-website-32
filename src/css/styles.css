@@ -75,16 +75,8 @@ p {
 
 /* header */
 
-.header .container {
-  max-width: 428px;
-}
-
-.nav {
-}
-
-.header-fixed-background {
+.header {
   position: fixed;
-
   width: 100%;
 
   background: rgba(255, 255, 255, 0.8);
@@ -96,16 +88,12 @@ p {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.logo-menu-container {
+.header .container {
   max-width: 428px;
-  margin-left: auto;
-  margin-right: auto;
+}
 
-  padding-left: 20px;
-  padding-right: 20px;
-
+.navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -118,6 +106,8 @@ p {
 }
 
 .menu-btn {
+  display: block;
+
   background: none;
   border: none;
 
@@ -130,22 +120,18 @@ p {
 
 .spin-burger {
   color: #101010;
+  fill: #101010;
+  stroke: #101010;
 }
 
 .spin-burger[pressed] {
   color: #101010;
-}
-
-.navigation-container {
-  display: none;
+  fill: #101010;
+  stroke: #101010;
 }
 
 .nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
-  margin-bottom: 150px;
+  display: none;
 }
 
 .nav-list .list-item {
@@ -184,9 +170,7 @@ p {
 }
 
 .nav-contacts-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: none;
 }
 
 .nav-phone {
@@ -227,6 +211,16 @@ p {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1440px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .header-logo {
+    width: 65px;
+    height: 56px;
+  }
+}
 /* hero */
 
 .hero {
@@ -342,6 +336,7 @@ p {
   margin-right: auto;
 
   border: none;
+  cursor: pointer;
 
   border-radius: 200px;
   background: #d7efe4;
@@ -1520,3 +1515,67 @@ p {
 /* .icon-close {
   background: none;
 } */
+
+/* mobile-menu */
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  margin-bottom: 150px;
+}
+
+.mobile-menu-list .list-item {
+  text-align: right;
+}
+
+.mobile-menu-list .list-item a {
+  color: #101010;
+  font-family: "Futura PT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.2px;
+}
+
+.mobile-menu-list .list-item:nth-child(1):before {
+  content: "●";
+  margin-right: 10px;
+
+  color: #fed165;
+}
+
+.mobile-menu-list .list-item:nth-child(2):before {
+  content: "●";
+  margin-right: 10px;
+
+  color: #00a2de;
+}
+
+.mobile-menu-list .list-item:nth-child(3):before {
+  content: "●";
+  margin-right: 10px;
+
+  color: #38b077;
+}
+
+.mobile-menu-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.mobile-menu-phone {
+  color: #101010;
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.16px;
+
+  margin-bottom: 10px;
+}

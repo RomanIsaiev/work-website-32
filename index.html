@@ -12,6 +12,39 @@
   </head>
   <body>
     <header class="header">
+      <div class="container">
+        <nav class="navigation link">
+          <a class="header-logo link" href="./index.html"
+            ><svg class="header-logo" width="36" height="30">
+              <use href="./src/images/sprite.svg#logo"></use></svg
+          ></a>
+          <button
+            class="menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+          >
+            <spin-burger size="28"></spin-burger>
+          </button>
+          <ul class="nav-list list">
+            <li class="list-item">
+              <a href="" class="link">Школа онлайн</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link">Про освіту</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link">Програма навчання</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-contacts-container">
+          <a class="nav-phone link" href="">+38 097 225 2099</a>
+          <button class="header-button" type="button">Подати заявку</button>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="header">
       <div class="header-fixed-background">
         <div class="logo-menu-container">
           <a class="header-logo link" href="./index.html"
@@ -27,15 +60,15 @@
             <spin-burger size="28"></spin-burger>
           </button>
         </div>
-      </div>
-      <div class="container">
         <nav class="nav">
           <div class="navigation-container">
             <ul class="nav-list list">
               <li class="list-item">
                 <a href="" class="link">Школа онлайн</a>
               </li>
-              <li class="list-item"><a href="" class="link">Про освіту</a></li>
+              <li class="list-item">
+                <a href="" class="link">Про освіту</a>
+              </li>
               <li class="list-item">
                 <a href="" class="link">Програма навчання</a>
               </li>
@@ -47,7 +80,7 @@
           </div>
         </nav>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="container">
@@ -747,7 +780,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu-container">
       <div class="mobile-menu">
         <div>
-          <ul class="nav-list list">
+          <ul class="mobile-menu-list list">
             <li class="list-item">
               <a href="" class="link">Школа онлайн</a>
             </li>
@@ -756,8 +789,8 @@
               <a href="" class="link">Програма навчання</a>
             </li>
           </ul>
-          <div class="nav-contacts-container">
-            <a class="nav-phone link" href="">+38 097 225 2099</a>
+          <div class="mobile-menu-contacts">
+            <a class="mobile-menu-phone link" href="">+38 097 225 2099</a>
             <button class="header-button" type="button">Подати заявку</button>
           </div>
         </div>
