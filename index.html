@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
@@ -70,9 +71,15 @@
         </div>
         <div class="hero-background-container">
           <div class="container">
-            <p class="hero-text">
-              Початкова школа, де найціннішою є повага до особистості дитини
-            </p>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <p class="hero-text">
+                Початкова школа, де найціннішою є повага до особистості дитини
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -121,6 +128,7 @@
           <svg class="about-school-image-desktop" width="546" height="349">
             <use href="./src/images/sprite.svg#about-school-desktop"></use>
           </svg>
+          <div class="ball"></div>
         </div>
       </section>
       <section class="you-get-skills">
@@ -133,7 +141,7 @@
             майбутнього дитини. Тож розповідаємо:
           </p>
           <ul class="skills-list list">
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in" data-aos-delay="50">
               <picture
                 ><source
                   srcset="
@@ -166,7 +174,7 @@
                 </p>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in" data-aos-delay="150">
               <picture
                 ><source
                   srcset="
@@ -199,7 +207,7 @@
                 </p>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in" data-aos-delay="250">
               <picture
                 ><source
                   srcset="
@@ -230,7 +238,7 @@
                 </p>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in" data-aos-delay="350">
               <picture
                 ><source
                   srcset="
@@ -414,7 +422,7 @@
           <p class="tariffs-desc">(Наповнення одного місяця навчання)</p>
           <div class="tariffs-main-container">
             <ul class="tariffs-list list">
-              <li class="list-item">
+              <li class="list-item" data-aos="zoom-in">
                 <picture
                   ><source
                     srcset="
@@ -468,7 +476,7 @@
                   <p class="tarif-price">4600грн</p>
                 </div>
               </li>
-              <li class="list-item">
+              <li class="list-item" data-aos="zoom-in">
                 <picture
                   ><source
                     srcset="
@@ -536,7 +544,7 @@
                   <p class="tarif-price">5900грн</p>
                 </div>
               </li>
-              <li class="list-item">
+              <li class="list-item" data-aos="zoom-in">
                 <picture
                   ><source
                     srcset="
@@ -813,7 +821,7 @@
             та закріплення місця має 3 кроки:
           </h2>
           <ul class="recruit-kids-list list">
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in">
               <div class="item-box">
                 <div><p class="item-number">1</p></div>
                 <div>
@@ -823,7 +831,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in" data-aos-delay="150">
               <div class="item-box">
                 <div><p class="item-number">2</p></div>
                 <div>
@@ -831,7 +839,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-item">
+            <li class="list-item" data-aos="zoom-in" data-aos-delay="350">
               <div class="item-box">
                 <div><p class="item-number">3</p></div>
                 <div>
@@ -840,7 +848,12 @@
               </div>
             </li>
           </ul>
-          <button class="recruit-kids-button" type="button">
+          <button
+            class="recruit-kids-button"
+            type="button"
+            data-aos="zoom-in"
+            data-aos-delay="550"
+          >
             Дізнатися детальніше
           </button>
         </div>
@@ -921,11 +934,16 @@
       </div>
     </div>
     <!--------------------MOBILE-MENU-END------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
     <script type="module" src="./src/js/vanilla-hamburger.js"></script>
     <script type="module" src="./src/js/mobile-menu.js"></script>
     <script type="module" src="./src/js/siema.js"></script>
     <script type="module" src="./src/js/faq.js"></script>
     <script type="module" src="./src/js/scroll.js"></script>
     <script type="module" src="./src/js/backToTop.js"></script>
+    <script type="module" src="./src/js/water-wave.js"></script>
   </body>
 </html>
