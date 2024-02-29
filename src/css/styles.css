@@ -673,11 +673,7 @@ p {
 }
 
 .water-wave {
-  display: block;
   width: 100%;
-  height: auto;
-
-  overflow: hidden;
 }
 
 .get-skills-title {
