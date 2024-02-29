@@ -127,18 +127,6 @@ p {
   z-index: 999;
 }
 
-.spin-burger {
-  color: #101010;
-  fill: #101010;
-  stroke: #101010;
-}
-
-.spin-burger[pressed] {
-  color: #101010;
-  fill: #101010;
-  stroke: #101010;
-}
-
 .nav-list {
   display: none;
 }
