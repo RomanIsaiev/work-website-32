@@ -20,13 +20,16 @@ import {
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
 
-    if (!isMenuOpen) {
-      disableBodyScroll(document.body);
-      // burger.pressed = true;
-    } else {
-      enableBodyScroll(document.body);
-      burger.pressed = false;
-    }
+    enableBodyScroll(document.body);
+    burger.pressed = false;
+
+    // if (!isMenuOpen) {
+    //   // disableBodyScroll(document.body);
+    //   // burger.pressed = true;
+    // } else {
+    //   enableBodyScroll(document.body);
+    //   burger.pressed = false;
+    // }
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
