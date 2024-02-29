@@ -10,7 +10,7 @@ import {
   const burger = document.querySelector("spin-burger");
   // const closeMenuBtn = document.querySelector(".js-close-menu");
 
-  // const linksMenuButtons = document.querySelectorAll(".mobile-menu-links");
+  const linksMenuButtons = document.querySelectorAll(".mobile-menu-links");
 
   const toggleMenu = (event) => {
     event.preventDefault();
@@ -23,21 +23,19 @@ import {
     enableBodyScroll(document.body);
     burger.pressed = false;
 
-    // if (!isMenuOpen) {
-    //   // disableBodyScroll(document.body);
-    //   // burger.pressed = true;
-    // } else {
-    //   enableBodyScroll(document.body);
-    //   burger.pressed = false;
-    // }
+    if (!isMenuOpen) {
+      burger.pressed = true;
+    } else {
+      burger.pressed = false;
+    }
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
   // closeMenuBtn.addEventListener("click", toggleMenu);
 
-  // linksMenuButtons.forEach((item) =>
-  //   item.addEventListener("click", toggleMenu)
-  // );
+  linksMenuButtons.forEach((item) =>
+    item.addEventListener("click", toggleMenu)
+  );
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
