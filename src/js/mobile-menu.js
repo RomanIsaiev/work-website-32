@@ -12,7 +12,9 @@ import {
 
   const linksMenuButtons = document.querySelectorAll(".mobile-menu-links");
 
-  const toggleMenu = () => {
+  const toggleMenu = (event) => {
+    event.preventDefault();
+
     const isMenuOpen =
       openMenuBtn.getAttribute("aria-expanded") === "true" || false;
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
